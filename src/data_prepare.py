@@ -108,7 +108,7 @@ def split_data(X: np.ndarray, y:np.ndarray, train_part: float = 0.7, random_stat
 
     return X_train, y_train, X_test, y_test
 
-def stadartizate_data(X_train: np.ndarray, X_test: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+def standartizate_data(X_train: np.ndarray, X_test: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     mean = np.mean(X_train, axis=0)
     std = np.std(X_train, axis=0)
 
@@ -117,4 +117,4 @@ def stadartizate_data(X_train: np.ndarray, X_test: np.ndarray) -> tuple[np.ndarr
     X_train_scaled = (X_train - mean) / std
     X_test_scaled = (X_test - mean) / std
 
-    return X_train_scaled, X_test_scaled, mean, std
+    return X_train_scaled, X_test_scaled
