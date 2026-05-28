@@ -129,6 +129,9 @@ $$w^{(new)} = w^{(old)} - \eta \left( \frac{\partial \mathcal{L}_{0}}{\partial w
 | F1-Score | 0.878378 |
 | ROC AUC | 0.867931 |
 
+### ROC-кривая
+![График ROC](/graphics/roc_roc_test.jpg)
+
 ### 1. Влияние скорости обучения (Learning Rate)
 *Конфигурация: batch_size=32, init_type="random", loss_type="bce"*
 
